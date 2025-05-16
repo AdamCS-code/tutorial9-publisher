@@ -1,4 +1,5 @@
 Nama: Adam Caldipawell Sembiring Kelas: ADPRO B NPM: 2306227160
+
 a. Berapa banyak data yang akan dikirimkan oleh program publisher Anda ke message broker dalam satu kali berjalan?
 Jawaban:
 Program publisher akan mengirimkan **lima** buah pesan ke message broker dalam satu kali berjalan. Setiap pesan memiliki struktur `UserCreatedEventMessage` dengan dua field string: `user_id` dan `user_name`. Berikut adalah detail setiap pesan:
@@ -23,3 +24,6 @@ Berikut adalah rinciannya:
 * **`5672`**: Keduanya menggunakan port yang sama, yaitu `5672`. Ini adalah port standar untuk komunikasi AMQP, sehingga kedua program mencoba untuk terhubung ke layanan AMQP di port yang sama pada host `localhost`.
 
 Dengan kata lain, publisher mengirimkan pesan ke broker AMQP yang sama tempat subscriber mendengarkan pesan. Ini adalah pola komunikasi yang umum dalam sistem berbasis pesan, di mana satu atau lebih publisher mengirimkan pesan ke broker, dan satu atau lebih subscriber menerima dan memproses pesan-pesan tersebut dari broker. Dalam kasus ini, publisher mengirimkan event `UserCreatedEventMessage` ke broker, dan subscriber yang terhubung ke broker yang sama akan menerima dan memproses event tersebut.
+
+### RABBITMQ SCREEN
+![picture](https://ibb.co/jktVLR5T)
