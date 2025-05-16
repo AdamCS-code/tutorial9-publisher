@@ -28,9 +28,11 @@ Dengan kata lain, publisher mengirimkan pesan ke broker AMQP yang sama tempat su
 ### RABBITMQ SCREEN
 - https://drive.google.com/file/d/1LKinmKfxOVZ-Qtuuxyqlq4s3xqCvAUK3/view?usp=sharing
 
-### CONSOLE:
+### Sending and Processing Event:
 - https://drive.google.com/file/d/1ViNqqnjVhKLb-9w5ut3X4m5QDvURiEBP/view?usp=sharing
-- https://drive.google.com/file/d/1IkUBN3sWy86HpowXV8XEqdNUXyEN3mEX/view?usp=sharing
 
 - publisher berhasil mengambil broadcast message ke subscriber
+
+### Montoring Chart:
+- https://drive.google.com/file/d/1IkUBN3sWy86HpowXV8XEqdNUXyEN3mEX/view?usp=sharing
 - RABBITMQ menunjukan adanya aktivitas tersebut
