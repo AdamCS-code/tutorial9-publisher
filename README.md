@@ -26,17 +26,21 @@ Berikut adalah rinciannya:
 Dengan kata lain, publisher mengirimkan pesan ke broker AMQP yang sama tempat subscriber mendengarkan pesan. Ini adalah pola komunikasi yang umum dalam sistem berbasis pesan, di mana satu atau lebih publisher mengirimkan pesan ke broker, dan satu atau lebih subscriber menerima dan memproses pesan-pesan tersebut dari broker. Dalam kasus ini, publisher mengirimkan event `UserCreatedEventMessage` ke broker, dan subscriber yang terhubung ke broker yang sama akan menerima dan memproses event tersebut.
 
 ### RABBITMQ SCREEN
-- https://drive.google.com/file/d/1LKinmKfxOVZ-Qtuuxyqlq4s3xqCvAUK3/view?usp=sharing
+- ![image](https://drive.google.com/file/d/1LKinmKfxOVZ-Qtuuxyqlq4s3xqCvAUK3/view?usp=sharing)
 
 ### Sending and Processing Event:
-- https://drive.google.com/file/d/1ViNqqnjVhKLb-9w5ut3X4m5QDvURiEBP/view?usp=sharing
+- ![image] (https://drive.google.com/file/d/1ViNqqnjVhKLb-9w5ut3X4m5QDvURiEBP/view?usp=sharing)
 
 - publisher berhasil mengambil broadcast message ke subscriber
 
 ### Montoring Chart:
-- https://drive.google.com/file/d/1IkUBN3sWy86HpowXV8XEqdNUXyEN3mEX/view?usp=sharing
+- ![image](https://drive.google.com/file/d/1IkUBN3sWy86HpowXV8XEqdNUXyEN3mEX/view?usp=sharing)
 - RABBITMQ menunjukan adanya aktivitas tersebut
 
 ### Simulation slow subscriber
-- https://drive.google.com/file/d/1-PEKSqDFWHujIyTxlhYHguFRVNhFVA4_/view?usp=sharing
-- Slow subscriber simulation
+- ![image](https://drive.google.com/file/d/1-PEKSqDFWHujIyTxlhYHguFRVNhFVA4_/view?usp=sharing)
+- Slow subscriber simulation. Karena terdapat delay saat subscriber, pesan - pesan tersebut tidak dapat langsung ditampilkan. Disini rabbitMQ memastikan bahwa pesan - pesan disampaikan sesuai dengan urutannya. Ini dilakukan dengan menyimpan pesan - pesan dari publisher kedalam queue.
+
+### Multiple Slow subscriber simulation
+- ![image](https://drive.google.com/file/d/1wZV5ZMgSS05aX9S_mcLO6nahuN18J1B7/view?usp=sharing)
+- ketika melakukan pemanggilan dengan banyak instance of subscriber. terdapat peningkatan performance. Jadi, horizontal scaling dapat dilakukan dengan baik.
