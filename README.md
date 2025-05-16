@@ -36,3 +36,7 @@ Dengan kata lain, publisher mengirimkan pesan ke broker AMQP yang sama tempat su
 ### Montoring Chart:
 - https://drive.google.com/file/d/1IkUBN3sWy86HpowXV8XEqdNUXyEN3mEX/view?usp=sharing
 - RABBITMQ menunjukan adanya aktivitas tersebut
+
+### Simulation slow subscriber
+- https://drive.google.com/file/d/1-PEKSqDFWHujIyTxlhYHguFRVNhFVA4_/view?usp=sharing
+- Slow subscriber simulation
