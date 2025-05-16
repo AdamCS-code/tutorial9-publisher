@@ -1,5 +1,4 @@
-# Informasi Tambahan tentang Program Publisher
-
+Nama: Adam Caldipawell Sembiring Kelas: ADPRO B NPM: 2306227160
 a. Berapa banyak data yang akan dikirimkan oleh program publisher Anda ke message broker dalam satu kali berjalan?
 Jawaban:
 Program publisher akan mengirimkan **lima** buah pesan ke message broker dalam satu kali berjalan. Setiap pesan memiliki struktur `UserCreatedEventMessage` dengan dua field string: `user_id` dan `user_name`. Berikut adalah detail setiap pesan:
